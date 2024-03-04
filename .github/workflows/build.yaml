@@ -33,7 +33,7 @@ env:
 
 jobs:
   check_and_prepare:
-    runs-on: ubuntu-latest
+    runs-on: [ self-hosted ]
     outputs:
       unity_version: ${{ steps.set_outputs.outputs.unity_version }}
     steps:
